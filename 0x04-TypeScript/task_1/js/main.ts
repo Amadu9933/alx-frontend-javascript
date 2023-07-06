@@ -1,4 +1,3 @@
-```typescript
 // Interface for Teacher
 interface Teacher {
   readonly firstName: string; // Read-only property for first name
@@ -37,7 +36,9 @@ interface StudentClassInterface {
 }
 
 // Implementation of StudentClass
-const StudentClass: StudentConstructor = class StudentClass implements StudentClassInterface {
+const StudentClass: StudentConstructor = class StudentClass
+  implements StudentClassInterface
+{
   firstName: string; // Property for first name
   lastName: string; // Property for last name
 
@@ -56,6 +57,3 @@ const StudentClass: StudentConstructor = class StudentClass implements StudentCl
 };
 
 export { printTeacher, StudentClass }; // Exporting the printTeacher function and StudentClass
-```
-
-This code snippet defines interfaces (Teacher, Directors, printTeacherFunction, StudentConstructor, StudentClassInterface) and implements the logic for the printTeacher function and the StudentClass. Each line is commented to explain its purpose and functionality.
